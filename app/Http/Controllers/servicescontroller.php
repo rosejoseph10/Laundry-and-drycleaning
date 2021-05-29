@@ -74,7 +74,7 @@ class servicescontroller extends Controller
     public function addservice(Request $req){
         
         $data=$req->input();
-        $Service= $data['Service'];
+        $service= $data['service'];
         $features= $data['features'];
         $unit= $data['unit'];
         $price = $data['price'];
