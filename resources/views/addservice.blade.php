@@ -26,7 +26,7 @@
  
  <tr>
      <td><center> service</center></td>
-     <td><input name="Service"   type="text" class="form-control"  placeholder="Service " required>
+     <td><input name="service"   type="text" class="form-control"  placeholder="service " required>
   </td>
  </tr>
  <tr>
