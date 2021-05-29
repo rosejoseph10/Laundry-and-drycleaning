@@ -83,7 +83,8 @@ class orderscontroller extends Controller
              $order->status="pending";
              $order->payment_method=$req->payment;
              $order->payment_status="pending";
-             $order->address=$req->address;
+             $order->pickup_date=$req->pickupdate;
+             $order->delivery_date=$req->deliverydate;
              $order->save();
              booking::where('admin_id',$adminId)->delete(); 
          }

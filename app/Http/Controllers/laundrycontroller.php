@@ -17,7 +17,7 @@ class laundrycontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     function booknow($sid)
+     function booknow(Request $r)
         {
         //$adminid=session('LoggedUser','id');
         // $total= DB::table('booking')
@@ -26,12 +26,15 @@ class laundrycontroller extends Controller
         // ->where('booking.service_id',$sid)
        // ->select('services.price');
         //->first();
-
+        $sid=$r->s_id;
+        $item=$r->item;
+        $quantity=$r->quantity;
         $total=service::where('id',$sid)->first();
         $intp=(int) $total->price;
-        $int=$intp+10;
+        $int=($intp*$quantity)+10;
+
         //return ($intp);
-      return view('booknow')->with('total',$total)->with('int',$int);
+      return view('booknow')->with('total',$total)->with('int',$int)->with('item',$item)->with('quantity',$quantity);
       }
 
         public function bookeditem()
@@ -132,6 +135,11 @@ class laundrycontroller extends Controller
         $o->payment_method=$request->payment;
         $o->payment_status='pending';
         $o->address=$request->address;
+        $o->pickup_date=$request->pickup_date;
+        $o->delivery_date=$request->delivery_date;
+        $o->item=$request->item;
+
+        $o->quantity=$request->quantity;
         $o->save();   
         
         return redirect('/viewservices');

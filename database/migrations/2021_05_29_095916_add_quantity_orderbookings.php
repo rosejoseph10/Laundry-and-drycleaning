@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPickupDateTable extends Migration
+class AddQuantityOrderbookings extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddPickupDateTable extends Migration
     public function up()
     {
         Schema::table('orderbookings', function (Blueprint $table) {
-                $table->date('pickup_date');
-            //
+            $table->integer('quantity');
+            $table->string('Item');
         });
     }
 

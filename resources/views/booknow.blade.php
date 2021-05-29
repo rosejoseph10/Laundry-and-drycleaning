@@ -15,9 +15,13 @@
         <table class="table">
          
             <tbody>
+            <tr>
+            <td>Quantity</td>
+            <td>{{$quantity}}</td>
+            </tr>
               <tr>
                 <td>Amount</td>
-              <td>${{$total->price}}</td>
+              <td>Rs {{$total->price}}</td>
               </tr>
               <tr>
                 <td>Tax</td>
@@ -25,11 +29,11 @@
               </tr>
               <tr>
                 <td>Delivery Charges</td>
-                <td>$ 10</td>
+                <td>Rs 10</td>
               </tr>
               <tr>
                 <td>Total Amount</td>
-              <td>${{$int}}</td>
+              <td>Rs {{$int}}</td>
               </tr>
             </tbody>
           </table>
@@ -39,13 +43,19 @@
               <input type="hidden" name="service_id" value="{{$total->id}}">
                 <div class="form-group">
                   <textarea name="address" placeholder="enter your address" class="form-control" ></textarea>
-                </div>
-
+                </div><br>
+            Item : {{$item}} <br>
+            <input type="hidden" name="item" value="{{$item}}">
+            <input type="hidden" name="quantity" value="{{$quantity}}">
+            <br>
                 <div class="form-group">
                   <label for="pwd">Payment Method</label> <br> <br>
                   <input type="radio" value="online" name="payment"> <span>Online Payment</span> <br> <br>
                   <input type="radio" value="cash" name="payment"> <span>Cash on Delivery</span> <br> <br>
-                  <input type="date" id="pickup date" name="pickup date"><br> <br>  
+                  <label for="pwd"> Pickup date:</label> 
+                 <input type="date" id="pickupdate" name="pickup_date"><br> <br>  
+                 <label for="pwd"> Delivery  date:</label> 
+                  <input type="date" id="deliverydate" name="delivery_date"><br> <br>
                 </div>
                 <button type="submit" class="btn btn-primary">Book Now</button>
               </form>

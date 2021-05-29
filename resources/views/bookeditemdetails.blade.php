@@ -20,9 +20,13 @@
  <th scope="col">status</th>
  <th scope="col">payment_method</th>
  <th scope="col">payment_status</th>
+ <th scope="col">pickup_date</th>
+ <th scope="col">delivery_date</th>
  <th scope="col">address</th>
  <th scope="col">service</th>
  <th scope="col">features</th>
+ <th scope="col">item</th>
+ <th scope="col">quantity</th>
  <th scope="col">unit</th>
  <th scope="col">price</th>
  <th scope="col">gallery</th>
@@ -37,9 +41,13 @@
  <td>{{$d->status}}</td>
  <td>{{$d->payment_method}}</td>
  <td>{{$d->payment_status}}</td>
+ <td>{{$d->pickup_date}}</td>
+ <td>{{$d->delivery_date}}</td>
  <td>{{$d->address}}</td>
  <td>{{$d->service}}</td>
  <td>{{$d->features}}</td>
+ <td>{{$d->item}}</td>
+ <td>{{$d->quantity}}</td>
  <td>{{$d->unit}}</td>
  <td>{{$d->price}}</td>
  <td><img src={{$d->gallery}}/></td>

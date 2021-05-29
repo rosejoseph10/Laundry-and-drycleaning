@@ -34,7 +34,7 @@ Route::get('/viewbookeditem',[laundrycontroller::class,'bookeditem']);
 Route::get('/detailslist',[orderscontroller::class,'show']);
 Route::get('/contact',[laundrycontroller::class,'show']);
 Route::get("/allservices",[admincontroller::class,'allservices']);
-Route::get('/booknow{sid}',[laundrycontroller::class,'booknow']);
+Route::post('/booknow',[laundrycontroller::class,'booknow']);
 
 Route::get('/addservice',[servicescontroller::class,'show']);
 Route::post('/addservice/add',[servicescontroller::class,'addservice']);

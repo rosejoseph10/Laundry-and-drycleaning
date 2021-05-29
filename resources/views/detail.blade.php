@@ -42,6 +42,13 @@
        <h3>features: {{$viewservices['features']}}</h3>
        <h3>unit: {{$viewservices['unit']}}</h3>
        <h3>price: {{$viewservices['price']}}</h3>
+       <form action="/booknow" method="post">
+       @csrf
+       <input type="hidden" name="s_id" value="{{$viewservices['id']}}">
+       <h3>Item:<input type="text" name="item" id=""></h3>
+       <h3>Quantity:<input type="text" name="quantity" id=""></h3><br>
+       <button type="submit" class="btn btn-primary">BOOK NOW</button>
+       </form>
        </center>
        
 
@@ -51,8 +58,8 @@
         height:250px;
         }
         </style>
-      <input type="hidden" name="service_id" value="{{$viewservices['id']}}">
-        <center><a  class="btn btn-primary" href="/booknow{{$viewservices['id']}}" >BOOK NOW</a></center>
+      
+        <!-- <center><a  class="btn btn-primary" href="/booknow{{$viewservices['id']}}" >BOOK NOW</a></center> -->
   
        <br><br>
        
