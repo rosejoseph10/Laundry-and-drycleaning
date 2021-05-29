@@ -15,7 +15,7 @@ class AddQuantityOrderbookings extends Migration
     {
         Schema::table('orderbookings', function (Blueprint $table) {
             $table->integer('quantity');
-            $table->string('Item');
+            $table->string('item');
         });
     }
 
