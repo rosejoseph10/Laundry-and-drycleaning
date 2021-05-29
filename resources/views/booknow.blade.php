@@ -44,7 +44,7 @@
                 <div class="form-group">
                   <textarea name="address" placeholder="enter your address" class="form-control" ></textarea>
                 </div><br>
-            Item : {{$Item}} <br>
+            item : {{$item}} <br>
             <input type="hidden" name="item" value="{{$item}}">
             <input type="hidden" name="quantity" value="{{$quantity}}">
             <br>
