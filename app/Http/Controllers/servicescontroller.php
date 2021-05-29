@@ -80,7 +80,7 @@ class servicescontroller extends Controller
         $price = $data['price'];
         $gallery = $data['gallery'];
         $p = new service();
-        $p->Service  = $Service;
+        $p->service  = $service;
         $p->features = $features;
         $p->unit = $unit;
         $p->price = $price;
