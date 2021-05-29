@@ -25,7 +25,7 @@
  <th scope="col">address</th>
  <th scope="col">service</th>
  <th scope="col">features</th>
- <th scope="col">item</th>
+ <th scope="col">Item</th>
  <th scope="col">quantity</th>
  <th scope="col">unit</th>
  <th scope="col">price</th>
@@ -46,7 +46,7 @@
  <td>{{$d->address}}</td>
  <td>{{$d->service}}</td>
  <td>{{$d->features}}</td>
- <td>{{$d->item}}</td>
+ <td>{{$d->Item}}</td>
  <td>{{$d->quantity}}</td>
  <td>{{$d->unit}}</td>
  <td>{{$d->price}}</td>
