@@ -8,12 +8,10 @@ use App\Http\Controllers\orderscontroller;
 use App\Http\Controllers\admincontroller;
 use App\Http\Controllers\editcontroller;
 
-
-
+Route::get('/admin',[admincontroller::class,'create'])->name('adminlogin');
 route::group(['middleware'=>['AuthCheck']],function()
 {
      Route::get('/admin/dashboard',[maincontroller::class,'dashboard']);
-     Route::get('/admin',[admincontroller::class,'create'])->name('adminlogin');
      Route::get('/adminreg',[admincontroller::class,'register'])->name('adminregister');
      Route::get('delete/{id}',[admincontroller::class,'delete']);
 Route::get('deletebooking/{id}',[admincontroller::class,'deletebooking']);

@@ -54,8 +54,9 @@
                     </div>
              </div>
             </div>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="hide" class="btn btn-primary" onclick="window.print()">Print</button>
+
             @endforeach
+            <button id="hide" class="btn btn-primary"onclick="window.print()">Print</button>
             <style>
 body {
   background-image: url('https://cdn5.vectorstock.com/i/1000x1000/01/99/wooden-table-against-a-bokeh-lights-background-vector-21570199.jpg');

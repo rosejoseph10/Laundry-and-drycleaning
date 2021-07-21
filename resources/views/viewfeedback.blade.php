@@ -18,16 +18,14 @@
 </nav>
 <br>
 <div class="container">
-   <h3><center><u><b>FEEDBACK DETAILS</center></u></h3></b><br>
-
-
+   <h3><center><u><b>FEEDBACK DETAILS</center></u></h3><button id="hide" class="btn btn-dark"onclick="window.print()">Print</button></b><br>
       <div id="hide">
-<nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand"></a>
   </div>
 
 </nav>
+
 <style>
 body {
   background-image: url('https://cdn5.vectorstock.com/i/1000x1000/01/99/wooden-table-against-a-bokeh-lights-background-vector-21570199.jpg');

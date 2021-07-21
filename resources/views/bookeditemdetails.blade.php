@@ -13,8 +13,11 @@
             <br>
             <br>
             <div class="col-md-12">
+            <button id="hide" class="btn btn-primary"onclick="window.print()">Print</button>
 <table class="table  table-striped table-responsive table-left">
 <thead class="thead-dark">
+<br>
+<br>
  <tr class="dark">
  <th scope="col">id</th>
  <th scope="col">service_id</th>

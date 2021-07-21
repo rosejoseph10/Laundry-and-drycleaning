@@ -11,6 +11,7 @@
  <div class="row">
             <h1 class="display-4 text-danger"><b>ALL SERVICE DETAILS</b></h1>
             <div class="col-md-12">
+        
 <table class="table  table-striped table-responsive table-left">
 <thead class="thead-dark">
  <tr class="dark">

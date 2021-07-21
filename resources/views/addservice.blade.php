@@ -44,7 +44,7 @@
  </tr>
  <tr>
      <td><center>Price</center></td>
-     <td><input name="price"   type="text" class="form-control" placeholder=" Price" required>
+     <td><input name="price"   type="number" class="form-control" placeholder=" Price" required>
 
      </td>
  </tr>
