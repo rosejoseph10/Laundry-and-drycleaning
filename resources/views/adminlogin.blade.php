@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry and Dry cleaning</title>
 </head>
-<body> 
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">KWIK WASH</a>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
         <a class="btn btn-success" href="/adminreg" type="button">REGISTER</a>
-        </li>
+        </li>  -->
   </div>
 </nav>
 
 <style>
-      
+
 body {
   background-image: url('https://ak4.picdn.net/shutterstock/videos/1008749414/thumb/1.jpg');
   background-repeat: no-repeat;
@@ -51,13 +51,11 @@ body {
     <span class="text-danger">@error('Password') {{ $message }} @enderror</span>   </div> <br>
     <button type="submit" class=" btn btnblock btn-success"> Login</button>
     <br>
-  
-
     </form>
         </div>
       </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

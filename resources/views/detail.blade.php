@@ -16,17 +16,17 @@
       </ul>
     </div>
     <ul class="nav navbar-nav navbar-right">
-    
+
     <a class="btn btn-success" href="/auth/login" type="button"> SIGN IN</a>
     <a class="btn btn-success" href="/auth/register" type="button"> SIGN UP</a>
     </ul>
-    
+
   </div>
   </div>
 </nav>
 <div class="container">
    <div class="row"><br>
-   
+
    <center>
    @if(Session::get('success'))
     <div class="alert alert-success">
@@ -45,12 +45,12 @@
        <form action="/booknow" method="post">
        @csrf
        <input type="hidden" name="s_id" value="{{$viewservices['id']}}">
-       <h3>Item:<input type="text" name="item" id=""></h3>
-       <h3>Quantity:<input type="text" name="quantity" id=""></h3><br>
+       <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item:&nbsp;<input type="text" name="item" id=""></h5>
+       <h5>Quantity:&nbsp;<input type="text" name="quantity" id=""></h5><br>
        <button type="submit" class="btn btn-primary">BOOK NOW</button>
        </form>
        </center>
-       
+
 
        <br><br>
        <style>
@@ -58,14 +58,14 @@
         height:250px;
         }
         </style>
-      
+
         <!-- <center><a  class="btn btn-primary" href="/booknow{{$viewservices['id']}}" >BOOK NOW</a></center> -->
-  
+
        <br><br>
-       
+
     </div>
    </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

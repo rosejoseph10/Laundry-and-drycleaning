@@ -18,7 +18,7 @@
 </nav>
 <br>
 <div class="container">
-<h1><center><u>Feedback Details</center></u></h1>
+   <h3><center><u><b>FEEDBACK DETAILS</center></u></h3></b><br>
 
 
       <div id="hide">
@@ -26,34 +26,42 @@
   <div class="container-fluid">
     <a class="navbar-brand"></a>
   </div>
-  
+
 </nav>
+<style>
+body {
+  background-image: url('https://cdn5.vectorstock.com/i/1000x1000/01/99/wooden-table-against-a-bokeh-lights-background-vector-21570199.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
 </div>
-    
+
     <table class="table">
     <tr>
-        
+
         <th style="background-color:black ; color:white;"><center>name</center></th>
         <th style="background-color:black ; color:white;"><center>email</center></th>
         <th style="background-color:black ; color:white;"><center>subject</center></th>
         <th style="background-color:black ; color:white;"><center>message</center></th>
-        
-        
-    </tr> 
-    
+
+
+    </tr>
+
     @foreach($viewfeedback as  $viewfeedback )
             <tr>
-               
+
                 <td><center>{{ $viewfeedback->name }}</center></td>
                 <td><center>{{ $viewfeedback->email }}</center></td>
                 <td><center>{{ $viewfeedback->subject }}</center></td>
                 <td><center>{{ $viewfeedback->message }}</center></td>
-                
+
             </tr>
             @endforeach
-        
-            </table> 
+
+            </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
 </html>

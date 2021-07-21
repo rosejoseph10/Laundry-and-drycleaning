@@ -23,7 +23,7 @@
           <a class="nav-link" href="#">Contact Us</a>
         </li>
       </ul>
-  
+
   </div>
 </nav>
 <style>
@@ -64,7 +64,7 @@ body {
     </div>
     <div class="form-group">
     <label>Phnno</label>
-    <input type="text" class="form-control" name="Phnno" placeholder=" Enter your Phnno" value="{{ old('Phnno') }}">
+    <input type="number" class="form-control" name="Phnno" placeholder=" Enter your Phnno" value="{{ old('Phnno') }}">
     <span class="text-danger">@error('Phnno') {{ $message }} @enderror</span>
     </div>
     <div class="form-group">
@@ -82,5 +82,5 @@ body {
     <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</body> 
+</body>
 </html>

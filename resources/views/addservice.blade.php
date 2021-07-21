@@ -15,15 +15,15 @@
  </div>
  <div class="col col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 ">
  <br><br>
- 
+
  <form action="/addservice/add" method="post" enctype="multipart/form-data">
    @csrf
     <br>
 
  <table class="table table-dark table-borderless "id="ip3" >
-<tr><td></td><td><h2><b>Add Service</b></h2> </td></tr>
+<tr><td></td><td><h2><b>ADD SERVICE</b></h2> </td></tr>
 
- 
+
  <tr>
      <td><center> service</center></td>
      <td><input name="service"   type="text" class="form-control"  placeholder="service " required>
@@ -33,8 +33,8 @@
      <td><center>features</center></td>
      <td><input name="features"   type="text" class="form-control"  placeholder="features" required>
      </td>
- 
- 
+
+
  </tr>
  <tr>
      <td><center>unit</center></td>
@@ -54,8 +54,8 @@
 </tr>
 <tr>
     <td></td>
-    <td><input type="submit" value="add" /> </td>
-    
+    <td><input type="submit" value="ADD" /> </td>
+
  </tr>
  </form>
  </table>
@@ -63,7 +63,7 @@
  </div>
  <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ">
 
- 
+
 </div>
 <style>
    body {
@@ -74,7 +74,7 @@
   height: 10vh;
 }
 </style>
-          
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 </html>

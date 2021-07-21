@@ -24,11 +24,11 @@
           <a class="nav-link" href="#">Contact Us</a>
         </li>
       </ul>
-  
+
   </div>
 </nav>
 
- 
+
 <style>
 body {
   background-image: url('https://th.bing.com/th/id/OIP.eZcq5kobB6pIYLbTkh_kjQHaEK?pid=ImgDet&w=221&h=124&c=7&dpr=1.25');
@@ -45,7 +45,7 @@ body {
     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <h4><centre><b>LOGIN</h4>
         <form action="{{route('auth.check')}}" method="post">
-      
+
         @if(Session::get('fail'))
     <div class="alert alert-danger">
     {{ Session::get('fail')}}
@@ -62,19 +62,19 @@ body {
      <div class="form-group">
         <label>Password</label>
     <input type="Password" class="form-control" name="Password" placeholder=" Enter Password">
-    <span class="text-danger">@error('Password') {{ $message }} @enderror</span>     
+    <span class="text-danger">@error('Password') {{ $message }} @enderror</span>
         </div> <br>
-        
+
         <button type="submit" class=" btn btnblock btn-success"> Login</button>
 
         <button type="submit" class=" btn btnblock btn-success"> Forget Password</button><br>
-        <a href="{{ route('auth.register')}}">Don't have an account,Register now</a>
-        
+        <!-- <a href="{{ route('auth.register')}}">Don't have an account,Register now</a> -->
+
              </form>
         </div>
       </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

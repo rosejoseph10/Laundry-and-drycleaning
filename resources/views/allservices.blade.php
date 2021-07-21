@@ -9,7 +9,7 @@
 </head>
  <div class="container"style="margin-left:50px;">
  <div class="row">
-            <h6 class="display-4 text-danger">ALL SERVICE DETAILS</h6>
+            <h1 class="display-4 text-danger"><b>ALL SERVICE DETAILS</b></h1>
             <div class="col-md-12">
 <table class="table  table-striped table-responsive table-left">
 <thead class="thead-dark">
@@ -28,11 +28,11 @@
   <td>{{$d->features}}</td>
   <td>{{$d->unit}}</td>
  <td>{{$d->price}}</td>
- <td><img src={{$d->gallery}}/> </td>
- 
- <td><a href={{"delete/".$d['id']}}>Delete</a></td>
- <td><a href={{"edit/".$d['id']}}>Edit</a></td>
-                
+ <td><img src= {{$d->gallery}}/> </td>
+
+ <td><a href={{"delete/".$d['id']}} class="btn btn-warning">Delete</a></td>
+ <td><a href={{"edit/".$d['id']}} class="btn btn-danger">Edit</a></td>
+
             </tr>
             <style>
                         body {
@@ -43,7 +43,7 @@
                         height: 400vh;
                         }
                         </style>
-            
+
  @endforeach
  </tbody>
 </table>

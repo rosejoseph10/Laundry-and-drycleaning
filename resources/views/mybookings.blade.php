@@ -16,25 +16,26 @@
       </ul>
     </div>
     <ul class="nav navbar-nav navbar-right">
-    
+
     <ul class="navbar-nav navbar-left">
-          <a class="btn btn-secondary" href="/" type="button">LOGOUT</a>
+          <a class="btn btn-warning" href="/" type="button">LOGOUT</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
           </ul>
-    
+
     </ul>
-    
+
   </div>
   </div>
-</nav>
+</nav><br>
 <div class="custom-product">
      <div class="col-sm-10">
         <div class="trending-wrapper">
-            <h4>My bookings </h4>
+
+            <h4><b>&nbsp;&nbsp;&nbsp;MY BOOKINGS</b></h4><br>
            @foreach($viewservices as $servicedetails)
-            
+
             <div class=" row searched-item cart-list-devider">
              <div class="col-sm-3">
                 <a href="detail/{{$servicedetails->id}}">
@@ -53,7 +54,16 @@
                     </div>
              </div>
             </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="hide" class="btn btn-primary" onclick="window.print()">Print</button>
             @endforeach
+            <style>
+body {
+  background-image: url('https://cdn5.vectorstock.com/i/1000x1000/01/99/wooden-table-against-a-bokeh-lights-background-vector-21570199.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
      </div>
 </div>
 </body>

@@ -41,11 +41,14 @@ Route::post('/addservice/add',[servicescontroller::class,'addservice']);
 Route::post('/auth/save',[maincontroller::class,'save'])->name('auth.save');
 Route::post('/auth/check',[maincontroller::class,'check'])->name('auth.check');
 Route::get('/auth/logout',[maincontroller::class,'logout'])->name('auth.logout');
-route::group(['middleware'=>['AuthCheck']],function(){
+
 
 Route::get('/auth/login',[maincontroller::class,'login'])->name('auth.login');
 Route::get('/auth/register',[maincontroller::class,'register'])->name('auth.register');
-Route::get("/allservices",[admincontroller::class,'allservices']); 
+
+route::group(['middleware'=>['AuthCheck']],function(){
+
+Route::get("/allservices",[admincontroller::class,'allservices']);
 Route::get('/viewservices',[servicescontroller::class,'index']);
 Route::get("/orderplace",[laundrycontroller::class,'orderplace']);
 Route::get("detail/{id}",[servicescontroller::class,'detail']);

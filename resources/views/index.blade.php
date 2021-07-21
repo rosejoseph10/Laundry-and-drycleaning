@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry and Dry cleaning</title>
 </head>
-<body> 
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">KWIK WASH</a>
@@ -25,7 +25,7 @@
         </li>
       </ul>
     </div>
-    
+
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
     <a class="navbar-brand" href="/admin" type="button">ADMIN</a>
     <a class="btn btn-success" href="/auth/login" type="button"> SIGN IN</a>
@@ -34,7 +34,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     </ul>
-    
+
   </div>
   </div>
 </nav>
@@ -48,23 +48,9 @@
     <div class="carousel-item active">
       <img src="https://www.tonytemplates.com/images/templates/big/Laundry-dry-services-template-big-preview.jpg" img width="1600"height="800px" class="d-block w=100" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="https://cdn.styleblueprint.com/wp-content/uploads/2020/02/SB-Dry-Cleaning-Tips-2U-Laundry.jpg"  img  width="1600"  height="800px"class="d-block w=100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://media.istockphoto.com/vectors/dry-cleaning-service-concept-young-woman-laundry-worker-stands-near-vector-id1202569831?b=1&k=6&m=1202569831&s=612x612&w=0&h=djCoED9ZBePsxpxbI8ftkUQZpCDGpvHHr7nzEx8hZqU="  img  width="1600" height="800px"class="d-block w=200" alt="...">
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
